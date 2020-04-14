@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>リミッター</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="マップ,メモ,マプモ">
+    <meta name="description" content="マップを長押しロケーションメモ　マプモ">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.16.0-rc-1/build/cssreset/cssreset-min.css">
+    <link rel="stylesheet" href="css/common.css" type="text/css" media="all">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style type="text/css">
+
+        .help h2{
+            font-weight: normal;
+            font-size: 20px;
+
+        }
+
+        .curled-box{
+            display: inline-block;
+            position: relative;
+            border-radius: 50%;
+            height: 10px;
+            width: 10px;
+            background: #a0d468;
+
+        }
+
+        .curled-box .space{
+            position: absolute;
+            border-radius: 50%;
+            height: 6px;
+            width: 6px;
+            left: 50%;
+            top: 50%;
+            margin-left: -3px;
+            margin-top: -3px;
+            background: #EDEBDF;
+        }
+
+        .h2Line{
+            background: #a0d468;
+            width: 100%;
+            height: 2px;
+            margin-bottom: 30px;
+        }
+
+        .faqArea{
+            padding-bottom: 40px;
+            margin-bottom:  40px;
+            border-bottom:1px dotted #aaa;
+        }
+
+        .faqArea dt{
+            position: relative;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .faqArea dd{
+            font-size: 12px;
+        }
+
+        .faqArea .q{
+            background: #a0d468;
+        }
+
+        .faqArea .a{
+            background: #aaa;
+        }
+
+        .faqArea .q,.faqArea .a{
+            position: absolute;
+            display: inline-block;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+
+            font-size: 14px;
+            color: #fff;
+            font-weight: normal;
+            text-align: center;
+        }
+
+        .faqAreaSize100{
+            width: 100%;
+        }
+
+        .faqAreaSize60{
+            width: 60%;
+        }
+
+        .faqAreaSize36{
+            width: 36%;
+        }
+
+        .faqArea .text{
+            float: left;
+            width: 30px;
+            padding: 4px 0 0 0;
+            text-align: center;
+        }
+
+        .faqArea .copy{
+            margin: 2px 0 0 40px;
+            display: inline-block;
+        }
+
+
+        .item{
+            display: inline-block;
+        }
+
+
+    </style>
+
+
+</head>
+
+
+
+
+<body>
+<div class="wrap">
+
+    <div class="contents help">
+        <div class="innter">
+            <h2>
+                <div class="curled-box">
+                    <div class="space"></div>
+                </div>
+            ヘルプ
+            </h2>
+    </div>
+    <div class="h2Line"></div>
+
+
+
+
+        <!--<dl class="faqArea">-->
+            <!--<div class="item faqAreaSize60">-->
+                <!--<dt><span class="q"><span class="text">Q</span></span><span class="copy">バーコードから賞味期限を登録する方法は？</span></dt>-->
+                <!--<dd><span class="a"><span class="text">A</span></span><span class="copy">これはこうです</span></dd>-->
+            <!--</div>-->
+            <!--<div class="image faqAreaSize36"><img src="images/img_photo_1.gif" width="90" height="90">-->
+            <!--</div>-->
+        <!--</dl>-->
+        <dl class="faqArea">
+            <div class="item faqAreaSize100">
+                <dt><span class="q"><span class="text">Q</span></span><span class="copy">バーコードを読み込むとエラーになる</span></dt>
+                <dd><span class="a"><span class="text">A</span></span><span class="copy">12月5日はテレビ放送の為、瞬間的に混雑が予想されます。その間は読み取りが正常に行われない可能性がございますので時間を置いてお試しください。</span></dd>
+            </div>
+        </dl>
+<dl class="faqArea">
+            <div class="item faqAreaSize100">
+                <dt><span class="q"><span class="text">Q</span></span><span class="copy">全ての制限解除の課金をしたがカメラ使用に制限がかかる</span></dt>
+                <dd><span class="a"><span class="text">A</span></span><span class="copy">稀に課金後にカメラに制限がかかることがあります。応急処置として課金画面のリストアを押すと治ることがあります。ご迷惑おかけいたします。なおリストアがされない場合そもそも購入ができていませんのでアップルから請求されることはありません。</span></dd>
+            </div>
+        </dl>
+
+
+        <dl class="faqArea">
+            <div class="item faqAreaSize100">
+                <dt><span class="q"><span class="text">Q</span></span><span class="copy">バーコードから賞味期限を登録する方法は？</span></dt>
+                <dd><span class="a"><span class="text">A</span></span><span class="copy">商品のリスト画面のした部分をタップするとバーコード読み取り画面が立ち上がります。</span></dd>
+            </div>
+        </dl>
+
+
+
+
+        <dl class="faqArea">
+            <div class="item faqAreaSize100">
+                <dt><span class="q"><span class="text">Q</span></span><span class="copy">カテゴリーの追加方法は？</span></dt>
+                <dd><span class="a"><span class="text">A</span></span><span class="copy">商品リスト画面上部中央のボタンを押すと「カテゴリーを選択」画面へ移動します。右上の追加を押すと新しくカテゴリーを追加することが出来ます。</span></dd>
+            </div>
+        </dl>
+
+        <dl class="faqArea">
+            <div class="item faqAreaSize100">
+                <dt><span class="q"><span class="text">Q</span></span><span class="copy">カメラを起動しても真っ暗で写真を取ることが出来ない</span></dt>
+                <dd><span class="a"><span class="text">A</span></span><span class="copy">スマホが写真を許可していない可能性がございます。「設定」→「プライバシー」→「カメラ」をオンにすればご使用することが出来ます。</span></dd>
+            </div>
+        </dl>
+
+        <dl class="faqArea">
+            <div class="item faqAreaSize100">
+                <dt><span class="q"><span class="text">Q</span></span><span class="copy">プッシュ通知のタイミングを変えたい例えば３日前とか</span></dt>
+                <dd><span class="a"><span class="text">A</span></span><span class="copy">左上上部の「歯車」の設定から「通知のタイミング設定」をタップすると１日前、３日前、７日前など細かく設定できるようになります。</span></dd>
+            </div>
+        </dl>
+
+        <dl class="faqArea">
+            <div class="item faqAreaSize100">
+                <dt><span class="q"><span class="text">Q</span></span><span class="copy">アプリのレビューってなんで必要なの？</span></dt>
+                <dd><span class="a"><span class="text">A</span></span><span class="copy">アプリのレビューがないと無料でアプリの提供が出来なくなってしまいます。長く使っていただくためにもレビューのご協力お願い致します。</span></dd>
+            </div>
+        </dl>
+
+        <dl class="faqArea">
+            <div class="item faqAreaSize100">
+                <dt><span class="q"><span class="text">Q</span></span><span class="copy">オリジナルバーコード機能とは？</span></dt>
+                <dd><span class="a"><span class="text">A</span></span><span class="copy">バーコードを読み込んでバーコードの情報がなかった。読み込んだバーコードを学習させる為の機能です。次回からバーコードを読み込んだ時に登録した情報が表示されます。</span></dd>
+            </div>
+        </dl>
+
+
+
+        <p class="downLoad"><a href="mailto:bar.limi&#116;er&#64;gmai&#108;&#46;&#99;&#111;&#109;?subject=お問い合わせ:&amp;body=リミッター2へのご質問内容">お問い合わせ</a>
+        </p>
+
+        <!--<p class="downLoad"><a href="https://itunes.apple.com/us/app/bakodode-jian-danni-shang/id901107971?mt=8" target="_blank">アプリのダウンロード</a>-->
+        </p>
+
+        <footer>© Nyantaro Apps./ Yosuke Nakayama</footer>
+
+
+    </div>
+</div>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="passmanager/js/common.js"></script>
+</body>
+</html>
