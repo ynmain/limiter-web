@@ -3,10 +3,9 @@
 <head>
     <meta charset="utf-8" />
 <script>
-function getMobileOperatingSystem() {
+function getMobileOS() {
   var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-      // Windows Phone must come first because its UA also contains "Android"
     if (/windows phone/i.test(userAgent)) {
         return "Windows Phone";
     }
@@ -15,7 +14,6 @@ function getMobileOperatingSystem() {
         return "Android";
     }
 
-    // iOS detection from: http://stackoverflow.com/a/9039885/177710
     if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
         return "iOS";
     }
@@ -25,7 +23,7 @@ function getMobileOperatingSystem() {
 
 <script>
 function DetectAndServe(){
-    let os = getMobileOperatingSystem();
+    let os = getMobileOS();
     if (os == "Android") {
         window.location.href = "https://play.google.com/store/apps/details?id=jp.labboy.limiterflutter"; 
     } else if (os == "iOS") {
